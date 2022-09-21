@@ -9,9 +9,9 @@ describe('kuchaknig first suite', () => {
         cy.get('.book_card_date').eq(0).find('span').should('contain', dateNow)
     })
     
-    it('title страницы книги', () => {
-        cy.visit('https://kuchaknig.org/avtor/ken-kizi/kniga-nad-kukushkinym-gnezdom-19028/') 
-        cy.get('title').should('contain', 'Книга Над кукушкиным гнездом - читать онлайн бесплатно без регистрации, Кен Элтон Кизи')
+    it.only('title страницы книги', () => {
+        cy.visit('https://kuchaknig.org/avtor/rey-bredberi/kniga-vino-iz-oduvanchikov-2438133/') 
+        cy.get('title').should('contain', 'Книга Вино из одуванчиков - читать онлайн бесплатно без регистрации, Рэй Дуглас Брэдбери') 
     })
 
     it('title страницы автора', () => {

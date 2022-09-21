@@ -18,7 +18,7 @@ describe('litportal first suite', () => {
 
       it('title страницы книги', () => {
         cy.visit('https://litportal.ru/avtory/rey-bredberi/kniga-vino-iz-oduvanchikov-942959.html') 
-        cy.get('title').should('contain', 'Книга Вино из одуванчиков - скачать бесплатно в fb2, txt, pdf, epub, Рэй Дуглас Брэдбери')
+        cy.get('title').should('contain', 'Книга Вино из одуванчиков - скачать бесплатно в pdf, epub, fb2, txt, Рэй Дуглас Брэдбери')
       })
 
       it('title страницы автора', () => {
